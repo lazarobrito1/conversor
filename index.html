@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="folhasDeEstilo/estilo.css">
+</head>
+
+<body>
+    <div>
+        
+            <span><strong>Insira um valor</strong>: <input type="number" id="valor_Inserido"></span>
+            <input type="button" value="cambiar" onclick="valorConvertido()">
+        
+        <p id="result"></p></p>
+    </div>
+
+    
+    <script>
+
+        function valorConvertido() {
+
+            var valor = document.getElementById("valor_Inserido").value;
+            var valorReais = 4.86.toFixed(2)
+            var cambio = valorReais * valor;
+            if (valor == 1) {
+                var valorFinal = document.getElementById("result").innerHTML = `O valor  de ${valor} real em dolar é de ${cambio} dólares`
+            }
+
+            else if (valor > 0) {
+                var valorFinal = document.getElementById("result").innerHTML = `O valor  de ${valor} reais em dolar é de ${cambio} dólares`
+            }
+            else {
+                alert('Insira um número válido')
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
