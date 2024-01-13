@@ -26,11 +26,11 @@
             var valorReais = 4.86.toFixed(2)
             var cambio = valorReais * valor;
             if (valor == 1) {
-                var valorFinal = document.getElementById("result").innerHTML = `O valor  de ${valor} real em dolar é de ${cambio} dólares`
+                var valorFinal = document.getElementById("result").innerHTML = `O valor de ${valor} dolar é de ${cambio} reais`
             }
 
             else if (valor > 0) {
-                var valorFinal = document.getElementById("result").innerHTML = `O valor  de ${valor} reais em dolar é de ${cambio} dólares`
+                var valorFinal = document.getElementById("result").innerHTML = `O valor de ${valor} dolares é de ${cambio}reais`
             }
             else {
                 alert('Insira um número válido')
